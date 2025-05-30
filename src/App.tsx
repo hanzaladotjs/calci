@@ -7,10 +7,13 @@ function App() {
 
   return (
     <div className='flex min-h-screen  justify-center bg-[#e5d9c7] items-center ' >
-      <div className='flex  flex-col border-3 rounded-4xl border-bg-[#6e7163] px-50 space-y-5 bg-[#472828] text-[#e5d9c7] py-40'>
-        <h1 className='text-5xl font-mono mt-0 hover:font-extrabold'> Calculator </h1>
-        <input  type='number' className='w-full  hover:bg-black border text-2xl '/>
-        <div className='flex items-center space-4 space-x-4'>
+      <div className='flex  flex-col border-3 rounded-4xl border-bg-[#6e7163] px-50 space-y-5 bg-[#472828] text-[#e5d9c7] p-40'>
+        <div className='flex justify-between'>
+           <h1 className='text-5xl font-mono mt-0 hover:font-extrabold'> Calculator </h1>
+           <button type='submit' className='border px-4 py-1 border-2 rounded-4xl hover:bg-black text-md font-semibold'> clear </button>
+          </div>
+        <input  value={inputValue} type='number' className='w-full  hover:bg-black border rounded-lg h-20 text-4xl '/>
+        <div className='flex items-center space-4 space-x-4 '>
           <DisplayNumber value={1} ></DisplayNumber>
           <DisplayNumber value={2} ></DisplayNumber>
           <DisplayNumber value={3} ></DisplayNumber>
@@ -36,6 +39,9 @@ function App() {
           <DisplayNumber value={0} ></DisplayNumber>
           <DisplayNumber value={"="} ></DisplayNumber>
         </div>
+
+        <footer className='font-bold'> made with &hearts; by hadi </footer>
+
       </div>
     </div>
   )
