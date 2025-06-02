@@ -29,7 +29,7 @@ function clear () {
 
   return (
     <div className="flex min-h-screen  justify-center bg-[#e5d9c7] items-center ">
-      <div className="flex  justify-between flex-col border-3 rounded-4xl border-bg-[#6e7163] py-10 px-4 md:px-50 space-y-5 bg-[#472828] text-[#e5d9c7] md:py-40 ">
+      <div className="flex  justify-between flex-col border-3 rounded-4xl border-bg-[#6e7163] py-30 px-3 md:px-50 space-y-5 bg-[#472828] text-[#e5d9c7] md:py-40 ">
 
         <div className="flex justify-between">
           <h1 className="md:text-5xl text-3xl font-mono mt-0 hover:font-extrabold">
